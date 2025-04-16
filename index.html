@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rxerium</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWYX9V9LC2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RWYX9V9LC2');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.26.0/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #1a1a1a url('https://www.transparenttextures.com/patterns/wave.png') repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #e0e0e0;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { createRoot } = ReactDOM;
+
+        const Socials = () => (
+            <div className="socials flex justify-center gap-5 p-2.5">
+                <a href="https://x.com/rxerium" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                    <i className="fab fa-x-twitter text-xl"></i>
+                </a>
+                <a href="https://github.com/rxerium" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                    <i className="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://instagram.com/rxerium" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                    <i className="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="mailto:rishi@rxerium.com" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                    <i className="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://signal.me/#eu/0Qd68U1ivXNdWCF4hf70UYFo7tB0w-GQqFpYcyV6-yr4exn2SclB6bFeP7wTAxQw" className="text-gray-300 hover:text-blue-400 transition-colors duration-300">
+                    <i className="fab fa-signal text-xl"></i>
+                </a>
+            </div>
+        );
+
+        const App = () => (
+            <div className="content text-center p-5">
+                <h1 className="text-8xl font-extrabold tracking-[6px] text-white uppercase mb-12" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+                    rxerium
+                </h1>
+                <p className="text-lg leading-8 max-w-[600px] mb-2.5"></p>
+                <p className="text-lg leading-8 max-w-[600px] mb-2.5">Hey 👋 I'm Rishi (aka rxerium)</p>
+                <p className="text-lg leading-8 max-w-[600px] mb-2.5">Senior Cyber Security Analyst based in London, UK</p>
+                <p className="text-lg leading-8 max-w-[600px] mb-2.5"></p>
+                <Socials />
+            </div>
+        );
+
+        const root = document.getElementById('root');
+        createRoot(root).render(<App />);
+    </script>
+</body>
+</html>
